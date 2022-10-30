@@ -35,8 +35,6 @@ position = Vector2( 554, 557 )
 
 [node name="BlockBoard" parent="." instance=ExtResource( 4 )]
 position = Vector2( 537, 208 )
-rows = 1
-collumns = 1
 
 [node name="LevelManager" parent="." instance=ExtResource( 5 )]
 position = Vector2( 883, 15 )

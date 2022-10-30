@@ -17,6 +17,8 @@ func _input(event):
 		direction = Vector2(-1, 0)
 	elif event.is_action_pressed("move_right"):
 		direction = Vector2(1, 0)
+	elif event.is_action_pressed("switch_direction"):
+		direction.x = -direction.x
 
 
 func _on_Paddle_area_entered(area):

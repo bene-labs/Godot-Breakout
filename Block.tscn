@@ -9,7 +9,7 @@ extents = Vector2( 310.25, 54 )
 [node name="Block" type="Area2D"]
 script = ExtResource( 2 )
 available_colors = [ Color( 0.631373, 0.109804, 0.109804, 1 ), Color( 0.0862745, 0.12549, 0.537255, 1 ), Color( 0.627451, 0.12549, 0.941176, 1 ), Color( 0.0980392, 0.505882, 0.027451, 1 ), Color( 0.972549, 0.796078, 0.101961, 1 ), Color( 0.152941, 0.435294, 0.764706, 1 ) ]
-powerup_drop_chance = 15
+powerup_drop_chance = 33
 
 [node name="Sprite" type="Sprite" parent="."]
 self_modulate = Color( 0.890196, 0.0784314, 0.0784314, 1 )
