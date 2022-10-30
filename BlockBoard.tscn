@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://BlockBoard.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+
+[node name="BlockBoard" type="Sprite"]
+scale = Vector2( 12.6302, 4.69014 )
+z_index = -100
+texture = ExtResource( 2 )
+script = ExtResource( 1 )

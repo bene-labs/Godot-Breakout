@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sprites/Block.png" type="Texture" id=1]
+[ext_resource path="res://Block.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 310.25, 54 )
+
+[node name="Block" type="Area2D"]
+script = ExtResource( 2 )
+available_colors = [ Color( 0.631373, 0.109804, 0.109804, 1 ), Color( 0.0862745, 0.12549, 0.537255, 1 ), Color( 0.627451, 0.12549, 0.941176, 1 ), Color( 0.0980392, 0.505882, 0.027451, 1 ), Color( 0.972549, 0.796078, 0.101961, 1 ), Color( 0.152941, 0.435294, 0.764706, 1 ) ]
+powerup_drop_chance = 15
+
+[node name="Sprite" type="Sprite" parent="."]
+self_modulate = Color( 0.890196, 0.0784314, 0.0784314, 1 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 310.75, 55 )
+shape = SubResource( 1 )
+
+[connection signal="area_entered" from="." to="." method="_on_Block_area_entered"]
